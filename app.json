@@ -12,7 +12,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.yourname.infimath", // ✅ change to your unique name
+      "package": "com.yourname.infimath", 
       "permissions": [
         "CAMERA",
         "READ_EXTERNAL_STORAGE",
@@ -40,7 +40,7 @@
       ],
       "expo-font",
       "expo-asset",
-      "expo-image-picker" // ✅ Required if you use ImagePicker
+      "expo-image-picker" 
     ]
   }
 }
