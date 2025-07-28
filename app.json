@@ -1,39 +1,46 @@
 {
-    "expo": {
-      "name": "apping",
-      "slug": "apping",
-      "version": "1.0.0",
-      "orientation": "portrait",
-      "icon": "./assets/images/InfiMathicon.png",
-      "scheme": "math",
-      "userInterfaceStyle": "dark",
-      "newArchEnabled": true,
-      "ios": {
-        "supportsTablet": true
-      },
-      "android": {
-        "adaptiveIcon": {
-          "foregroundImage": "./assets/images/InfiMathicon.png",
+  "expo": {
+    "name": "InfiMath",
+    "slug": "InfiMath",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/InfiMathicon.png",
+    "scheme": "math",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.yourname.infimath", // ✅ change to your unique name
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "INTERNET"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/InfiMathicon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/images/InfiMathicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/InfiMathicon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      },
-      "web": {
-        "bundler": "metro",
-        "favicon": "./assets/images/InfiMathicon.png"
-      },
-      "plugins": [
-        [
-          "expo-splash-screen",
-          {
-            "image": "./assets/images/InfiMathicon.png",
-            "imageWidth": 200,
-            "resizeMode": "contain",
-            "backgroundColor": "#ffffff"
-          }
-        ],
-        "expo-font",
-        "expo-asset"
-      ]
-    }
+      ],
+      "expo-font",
+      "expo-asset",
+      "expo-image-picker" // ✅ Required if you use ImagePicker
+    ]
   }
-  
+}
