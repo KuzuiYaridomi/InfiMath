@@ -1,0 +1,39 @@
+{
+    "expo": {
+      "name": "apping",
+      "slug": "apping",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "icon": "./assets/images/InfiMathicon.png",
+      "scheme": "math",
+      "userInterfaceStyle": "dark",
+      "newArchEnabled": true,
+      "ios": {
+        "supportsTablet": true
+      },
+      "android": {
+        "adaptiveIcon": {
+          "foregroundImage": "./assets/images/InfiMathicon.png",
+          "backgroundColor": "#ffffff"
+        }
+      },
+      "web": {
+        "bundler": "metro",
+        "favicon": "./assets/images/InfiMathicon.png"
+      },
+      "plugins": [
+        [
+          "expo-splash-screen",
+          {
+            "image": "./assets/images/InfiMathicon.png",
+            "imageWidth": 200,
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+          }
+        ],
+        "expo-font",
+        "expo-asset"
+      ]
+    }
+  }
+  
