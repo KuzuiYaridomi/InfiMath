@@ -7,6 +7,8 @@ import { extractTextFromImages } from "./OCR";
 
 // AsyncStorage key
 const CAMERA_HISTORY_KEY = "camera_history";
+console.log("[MathSolver] Using API Key:", GOOGLE_AI_API_KEY?.slice(0, 10));
+
 
 // ── MAIN FUNCTION ─────────────────────────────────────────
 export async function solveMathProblem(
@@ -70,7 +72,8 @@ export async function solveMathProblem(
 
       return text || "⚠ No response from AI.";
     } catch (err) {
-      console.error(`[MathSolver] ❌ Model ${models[i]} failed:`, err);
+      console.error(`[MathSolver] ❌ Model ${models[i]} failed:`, JSON.stringify(err, null, 2));
+
     }
   }
 

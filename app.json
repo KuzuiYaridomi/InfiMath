@@ -12,12 +12,13 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.yourname.infimath", 
+      "package": "com.yourname.infimath",
       "permissions": [
-        "CAMERA",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE",
-        "INTERNET"
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET",
+        "android.permission.RECORD_AUDIO"
       ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/InfiMathicon.png",
@@ -40,7 +41,12 @@
       ],
       "expo-font",
       "expo-asset",
-      "expo-image-picker" 
-    ]
+      "expo-image-picker"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c30d036b-21fe-49c7-bcb4-44379f2ab855"
+      }
+    }
   }
 }
