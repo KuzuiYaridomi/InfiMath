@@ -1,50 +1,16 @@
-# Welcome to your Expo app 👋
+# Welcome to InfiMath 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This an app built by Muzammil Pasha aka Kuzui Yaridomi. The app aims to solve a real life problem of teaching individuals concepts of SCIENCE!.
 
-## Get started
+InfiMath comes along with a built in question solver which uses AI to solve questions along with a QUESTION GENERATOR that generates questions based on the topic inputted through prompt.
 
-1. Install dependencies
+As a first time app developer with almost 0 experience, this was a big feat for me to achieve. A lot of research led the app to its current stage.
 
-   ```bash
-   npm install
-   ```
+I have much more to learn on how to make the app for modern, sleek and have greater accuracy in solving and generating questions along with improving its UI.
 
-2. Start the app
+I hope you enjoy the app as much as I do. And I really hope this app genuinely helps you understand a topic and help you practice questions on it to teach you the ways of solving.
 
-   ```bash
-    npx expo start
-   ```
+Please message me at discord or slack: kuzuiyaridomi
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Thank you!
+- a contestant app for the competition "Gemini" hosted by #HACKCLUB
