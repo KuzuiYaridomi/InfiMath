@@ -1,4 +1,5 @@
-import { GOOGLE_AI_API_KEY, GOOGLE_API_KEY } from "@env";
+const GOOGLE_AI_API_KEY = process.env.GOOGLE_AI_API_KEY;
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Optional limits

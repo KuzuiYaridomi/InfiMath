@@ -1,9 +1,11 @@
 // utils/MathSolver.ts
 
-import { GOOGLE_AI_API_KEY, GOOGLE_API_KEY } from "@env";
+const GOOGLE_AI_API_KEY = process.env.GOOGLE_AI_API_KEY;
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { getFromStorage, saveToStorage } from "./asyncHelpers";
 import { extractTextFromImages } from "./OCR";
+import { Alert } from "react-native";
 
 // AsyncStorage key
 const CAMERA_HISTORY_KEY = "camera_history";
@@ -73,9 +75,23 @@ export async function solveMathProblem(
       return text || "⚠ No response from AI.";
     } catch (err) {
       console.error(`[MathSolver] ❌ Model ${models[i]} failed:`, JSON.stringify(err, null, 2));
-
+      Alert.alert(
+    `Gemini Error (${models[i]})`,
+    typeof err === "string" ? err : JSON.stringify(err, null, 2)
+  );
     }
   }
 
-  return "🚨 Gemini is temporarily overloaded. Please try again shortly.";
+  Alert.alert(
+  "AI Request Failed",
+  "Gemini did not respond. This may be due to:\n\n" +
+  "- Invalid or missing API key\n" +
+  "- Network connection issue\n" +
+  "- Google Gemini server error\n" +
+  "- Quota limit or rate limiting\n\n" +
+  "Please check your .env and try again later."
+ );
+ return "⚠ AI response failed. See alert for details.";
+
+
 }
